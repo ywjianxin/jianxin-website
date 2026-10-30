@@ -1,1 +1,15 @@
-{"name":"jianxin-website","version":"1.0.0","private":true,"scripts":{"dev":"node server.mjs","start":"node server.mjs","check":"node --check server.mjs && node --check app.js"},"engines":{"node":">=20"}}
+{
+  "name": "jianxin-website",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check app.js && node --check scripts/build-home.mjs && node --check scripts/build-pages.mjs && node --check scripts/v2-shared.mjs && node --check data/catalog.mjs && node --check assets/site-images.js",
+    "pages": "node scripts/build-home.mjs && node scripts/build-pages.mjs",
+    "test": "node scripts/check-site.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

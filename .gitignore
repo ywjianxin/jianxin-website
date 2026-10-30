@@ -1,0 +1,5 @@
+node_modules/
+backups/
+.local-tools/
+.DS_Store
+Thumbs.db
